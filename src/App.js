@@ -1,25 +1,32 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Route, Switch, BrowserRouter, Link } from 'react-router-dom'
+import UseStatePage from './UseStatePage'
+import UseEffectPage from './UseEffectPage'
+import context from "./context";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <header className="App-header">
+          Hooks
+        </header>
+        <main>
+          <aside>
+            <p><Link to='/useState'>useState</Link></p>
+            <p><Link to='/useEffect'>useEffect</Link></p>
+          </aside>
+          <section>
+            <Switch>
+              <Route path="/useState" render={(routeProps) => <UseStatePage {...routeProps}/>}/>
+              <Route path="/useEffect" render={(routeProps) => <UseEffectPage {...routeProps}/>}/>
+            </Switch>
+          </section>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
