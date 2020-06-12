@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import ExpertQuestion from './ExpertQuestions'
-import {Link} from "react-router-dom";
 
 export default function Expperts(props) {
   const [experts, setExperts] = useState([])
   const [id, setId] = useState(null)
   useEffect(() => {
-    fetch('https://careu.104-dev.com.tw/api/experts').then((res) => {
-      return res.json()
-    }).then(result => {
+    fetch('https://careu.104-dev.com.tw/api/experts')
+      .then(res => res.json())
+      .then(result => {
       console.log('result', result)
       setExperts(result.data)
     })

@@ -10,6 +10,8 @@ export default function ExpertQuestion(props) {
           console.log('resultEQ', result)
           setData(result.data)
         })
+    } else {
+      setData(null)
     }
   }, [props.id])
   return (data &&

@@ -1,17 +1,16 @@
-import React, { useState, useContext } from 'react'
-import context from "./context";
+import React, { useState, useEffect } from 'react'
 
 export default function UseStatePage(props) {
-  const [count, setCount] = useState(0)
-  const CONTEXT = useContext(context)
+
+  // setTitle
+  useEffect(() => {
+    if (props.actions) props.actions.setTitle('UseState')
+  }, [])
   return (
     <div>
-      Count: {count}
-      name: {CONTEXT.name}
+      Count: 0
       <br/>
-      <button onClick={() => {
-        setCount(count + 1)
-      }}>+1</button>
+      <button>+1</button>
     </div>
   )
 }
