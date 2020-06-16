@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd73e8e5-104d-4094-80ec-a3cb97a1e4bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CustomHookPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FunctionalComponentPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PureComponentPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UseCallbackPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UseMemoPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WhatIsReactPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591767573045</updated>
-      <workItem from="1591767575485" duration="44294000" />
+      <workItem from="1591767575485" duration="45260000" />
     </task>
     <servers />
   </component>
