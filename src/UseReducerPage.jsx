@@ -50,15 +50,17 @@ export default function UseReducerPage(props) {
 
     // step2 setCount -> dispatch
     function add() {
-        dispatch('ADD') // TODO: 要用 object { action: 'ADD' }
+        // DONT dispatch 裡要用 object { action: 'ADD' }
+        // dispatch('ADD')
+        dispatch({ action: 'ADD' })
     }
 
     function minus() {
-        dispatch('MINUS')
+        dispatch({ action: 'MINUS' })
     }
 
     function reset() {
-        dispatch('RESET')
+        dispatch({ action: 'RESET' })
     }
 
     //step 0 確認畫面會用到 add, minus, reset
