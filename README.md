@@ -2,7 +2,7 @@
 
 ### start: `npm start`
 
-#### 同事分享出的 homework1:
+#### homework1:
 
 ```
 怎麼用 useContext + useReduce 來取代 Redux？
@@ -13,7 +13,7 @@
 
 ```
 
-#### 同事分享出的 homework2:
+#### homework2:
 
 ```
 
