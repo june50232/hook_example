@@ -11,6 +11,8 @@
 
 ./src/App.js
 
+./src/store.js
+
 ```
 
 #### homework2:

@@ -4,6 +4,7 @@ const initialState = {
   title: '',
 }
 
+// TODO: Homework1 ： 怎麼用useContext + useReduce來取代Redux
 const store = React.createContext(initialState)
 export default store
 

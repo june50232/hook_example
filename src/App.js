@@ -58,4 +58,5 @@ function App(props) {
 }
 
 export default withRouter(App);
+// TODO: Homework1 ： 怎麼用useContext + useReduce來取代Redux
 // export default withRouter(connect(App));
