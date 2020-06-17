@@ -2,6 +2,20 @@
 
 ### start: `npm start`
 
+### 常用的Hooks
+
+> ppt p.3
+
+- useState
+- useEffect
+- useContext
+- useReducer
+- useCallback
+- useMemo
+- customer hook
+
+---
+
 #### homework1:
 
 ```

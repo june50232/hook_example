@@ -5,6 +5,7 @@ import Home from './Home'
 import WhatIsReactPage from './WhatIsReactPage'
 import FunctionalComponentPage from './FunctionalComponentPage'
 import UseStatePage from './UseStatePage'
+import UseEffectHomework from './UseEffectHomework'
 import UseEffectPage from './UseEffectPage'
 import UseContextPage from './UseContextPage'
 import UseReducerPage from './UseReducerPage'
@@ -28,7 +29,8 @@ function App(props) {
           <p><Link to='/whatIsReact'>what is React?</Link></p>
           <p><Link to='/functionalComponent'>functional component</Link></p>
           <p><Link to='/useState'>useState</Link></p>
-          <p><Link to='/useEffect'>useEffect</Link></p>
+          <p><Link to='/useEffect'>useEffectPage</Link></p>
+          <p><Link to='/useEffectHomework'>homework1</Link></p>
           <p><Link to='/useContext'>useContext</Link></p>
           <p><Link to='/useReducer'>useReducer</Link></p>
           <p><Link to='/pureComponent'>pure component</Link></p>
@@ -40,6 +42,7 @@ function App(props) {
           <Switch>
             <Route exact={true} path="/" render={(routeProps) => <Home {...routeProps} {...props}/>}/>
             <Route path="/useState" render={(routeProps) => <UseStatePage {...routeProps} {...props}/>}/>
+            <Route path="/useEffectHomework" render={(routeProps) => <UseEffectHomework {...routeProps} {...props}/>}/>
             <Route path="/whatIsReact" render={(routeProps) => <WhatIsReactPage {...routeProps} {...props}/>}/>
             <Route path="/functionalComponent" render={(routeProps) => <FunctionalComponentPage {...routeProps} {...props}/>}/>
             <Route path="/useEffect" render={(routeProps) => <UseEffectPage {...routeProps} {...props}/>}/>
