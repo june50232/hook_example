@@ -1,9 +1,3 @@
-import React, {
-
-    // DIY step1
-    useState,
-} from 'react'
-
 /**
  * useState ppt p.4
  *
@@ -15,6 +9,13 @@ import React, {
  * DIY2: 點擊 +1 btn 改變 render count
  *
  */
+
+import React, {
+
+    // DIY step1
+    useState,
+} from 'react'
+
 export default function UseStatePage(props) {
   // DIY step2
   const [

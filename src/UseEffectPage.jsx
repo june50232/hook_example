@@ -1,10 +1,3 @@
-import React, {
-    useState,
-
-    // DIY step1
-    useEffect
-} from 'react'
-
 /**
  * useEffect ppt p.5
  *
@@ -16,6 +9,14 @@ import React, {
  * DIY2: 監聽到 scroll 事件 印 console.log、離開頁面時解除監聽事件
  *
  */
+
+import React, {
+    useState,
+
+    // DIY step1
+    useEffect
+} from 'react'
+
 export default function UseEffectPage(props) {
   const [
       count,

@@ -4,7 +4,7 @@
 >
 > [ fork 出處 🔗](https://github.com/josh79622/hook_example)
 
-## init
+## Init
 
 `npm install`
 
@@ -22,7 +22,7 @@
 - [useMemo](https://github.com/june50232/hook_example/blob/master/src/UseMemoPage.jsx)
 - [customer hook](https://github.com/june50232/hook_example/blob/master/src/CustomHookPage.jsx)
 
----
+## Homeworks
 
 #### homework1:
 
