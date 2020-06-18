@@ -52,15 +52,16 @@ export default function UseReducerPage(props) {
     function add() {
         // DONT dispatch 裡要用 object { action: 'ADD' }
         // dispatch('ADD')
-        dispatch({ action: 'ADD' })
+        // DONT 只有 'ADD' 要加 type key
+        dispatch({ type: 'ADD' })
     }
 
     function minus() {
-        dispatch({ action: 'MINUS' })
+        dispatch({ type: 'MINUS' })
     }
 
     function reset() {
-        dispatch({ action: 'RESET' })
+        dispatch({ type: 'RESET' })
     }
 
     //step 0 確認畫面會用到 add, minus, reset
