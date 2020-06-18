@@ -3,7 +3,7 @@
  *
  * DIY api1 取得 data1：https://tinyurl.com/y5f9dcsj
  * DIY2 api2 用 data1 取得 data2：https://tpeoc.blob.core.windows.net/blobfs/GetFTDDamData.json
- *      TODO: 找個跟 api1 response 資料有關的 api2
+ *
  */
 
 import React, {
@@ -59,14 +59,16 @@ export default function UseEffectHomework(props) {
 
   // DIY2 step4
   useEffect(() => {
-      fetch(proxyUrl + 'https://tpeoc.blob.core.windows.net/blobfs/GetFTDDamData.json')
-          .then(res => res.json())
-          .then(response => {
-              console.log(response)
+      if (stations && stations.length > 0) {
+          fetch(proxyUrl + 'https://tpeoc.blob.core.windows.net/blobfs/GetFTDDamData.json')
+              .then(res => res.json())
+              .then(response => {
+                  console.log(response)
 
-              // DIY2 step5
-              setWaterDatas(response)
-          })
+                  // DIY2 step5
+                  setWaterDatas(response)
+              })
+      }
   }, [stations])
 
   return ( // DIY、DIY2 step3 確認參數的 render

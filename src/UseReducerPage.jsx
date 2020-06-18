@@ -4,7 +4,7 @@
  * 像 redux
  * 管理非單向流、跨元件的 state 使用
  *
- * DIY: 用 reducer 管理原本 state 的 count
+ * DIY: 用 reducer 管理原本(UseStatePage.jsx) state 的 count
  *
  */
 

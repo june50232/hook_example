@@ -10,9 +10,11 @@
 
 `npm start`
 
-## Hooks
+## Hooks API
 
 > ppt p.3
+>
+> [官網 🔗](https://zh-hant.reactjs.org/docs/hooks-reference.html)
 
 - [useState](https://github.com/june50232/hook_example/blob/master/src/UseStatePage.jsx)
 - [useEffect](https://github.com/june50232/hook_example/blob/master/src/UseEffectPage.jsx)
@@ -20,24 +22,11 @@
 - [useReducer](https://github.com/june50232/hook_example/blob/master/src/UseReducerPage.jsx)
 - [useCallback](https://github.com/june50232/hook_example/blob/master/src/UseCallbackPage.jsx)
 - [useMemo](https://github.com/june50232/hook_example/blob/master/src/UseMemoPage.jsx)
-- [customer hook](https://github.com/june50232/hook_example/blob/master/src/CustomHookPage.jsx)
+- [custom hooks](https://github.com/june50232/hook_example/blob/master/src/CustomHookPage.jsx)
 
 ## Homeworks
 
 #### homework1:
-
-```
-怎麼用 useContext + useReduce 來取代 Redux？
-
-以 title 為例
-
-./src/App.js
-
-./src/store.js
-
-```
-
-#### homework2:
 
 ```
 
@@ -46,3 +35,19 @@ call 兩隻 api
 ./src/UseEffectPage.jsx
 
 ```
+
+#### homework2:
+
+```
+怎麼用 useContext + useReduce 來取代 Redux？
+
+以 count 為例
+
+./src/App.js
+
+./src/store.js
+
+./src/UseReducerHomework.jsx
+
+```
+

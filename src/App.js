@@ -1,3 +1,11 @@
+/**
+ * Homework2 ： 用 useContext + useReduce 來取代 Redux
+ *
+ * UseReducerHomework.jsx
+ * store.js
+ *
+ */
+
 import React from 'react';
 import './App.css';
 import { Route, Switch, Link, withRouter } from 'react-router-dom'
@@ -9,6 +17,7 @@ import UseEffectHomework from './UseEffectHomework'
 import UseEffectPage from './UseEffectPage'
 import UseContextPage from './UseContextPage'
 import UseReducerPage from './UseReducerPage'
+import UseReducerHomework from './UseReducerHomework'
 import PureComponentPage from './PureComponentPage'
 import UseCallbackPage from './UseCallbackPage'
 import UseMemoPage from './UseMemoPage'
@@ -33,6 +42,7 @@ function App(props) {
           <p><Link to='/useEffectHomework'>homework1</Link></p>
           <p><Link to='/useContext'>useContext</Link></p>
           <p><Link to='/useReducer'>useReducer</Link></p>
+          <p><Link to='/useReducerHomework'>homework2</Link></p>
           <p><Link to='/pureComponent'>pure component</Link></p>
           <p><Link to='/useCallback'>useCallback</Link></p>
           <p><Link to='/useMemo'>useMemo</Link></p>
@@ -48,6 +58,7 @@ function App(props) {
             <Route path="/useEffect" render={(routeProps) => <UseEffectPage {...routeProps} {...props}/>}/>
             <Route path="/useContext" render={(routeProps) => <UseContextPage {...routeProps} {...props}/>}/>
             <Route path="/useReducer" render={(routeProps) => <UseReducerPage {...routeProps} {...props}/>}/>
+            <Route path="/useReducerHomework" render={(routeProps) => <UseReducerHomework {...routeProps} {...props}/>}/>
             <Route path="/pureComponent" render={(routeProps) => <PureComponentPage {...routeProps} {...props}/>}/>
             <Route path="/useCallback" render={(routeProps) => <UseCallbackPage {...routeProps} {...props}/>}/>
             <Route path="/useMemo" render={(routeProps) => <UseMemoPage {...routeProps} {...props}/>}/>
@@ -60,6 +71,6 @@ function App(props) {
   );
 }
 
-// export default withRouter(App);
-// DONT 如果要用 reducer，要加 connect?
+// 沒用 useContext: export default withRouter(App);
+// homework2: 如果要用 reducer，要加 connect
 export default withRouter(connect(App));

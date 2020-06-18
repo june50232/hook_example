@@ -1,10 +1,18 @@
+/**
+ * Homework2 ： 用 useContext + useReduce 來取代 Redux
+ *
+ * UseReducerHomework.jsx
+ * App.js
+ *
+ */
+
 import React, { useContext, useReducer } from 'react'
 
 const initialState = {
   title: '',
+  count: 0,
 }
 
-// TODO: Homework1 ： 怎麼用useContext + useReduce來取代Redux
 const store = React.createContext(initialState)
 export default store
 
@@ -12,6 +20,10 @@ function Reducers(state, action) {
   switch (action.type) {
     case 'SET_TITLE':
       return Object.assign({}, state, { title: action.title })
+    case 'ADD_COUNT':
+    case 'MINUS_COUNT':
+    case 'RESET_COUNT':
+      return Object.assign({}, state, { count: action.count })
     default:
   }
 }
@@ -23,7 +35,25 @@ function Actions(state, dispatch) {
         type: 'SET_TITLE',
         title,
       })
-    }
+    },
+    addCount: function() {
+      dispatch({
+        type: 'ADD_COUNT',
+        count: state.count + 1,
+      })
+    },
+    minusCount: function() {
+      dispatch({
+        type: 'MINUS_COUNT',
+        count: state.count - 1,
+      })
+    },
+    resetCount: function() {
+      dispatch({
+        type: 'RESET_COUNT',
+        count: 0,
+      })
+    },
   }
 }
 
