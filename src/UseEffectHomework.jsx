@@ -1,8 +1,13 @@
 /**
  * Homework：call 完 api1, 取得 id call api2
  *
- * DIY api1 取得 data1：https://tinyurl.com/y5f9dcsj
- * DIY2 api2 用 data1 取得 data2：https://tpeoc.blob.core.windows.net/blobfs/GetFTDDamData.json
+ * DIY api1 取得 data1：
+ * https://data.taipei/#/dataset/detail?id=6f03a0b8-7b98-4eea-8bb9-ba6bfcdc2b8b
+ * api GET https://tinyurl.com/y5f9dcsj
+ *
+ * DIY2 api2 有 data1 後再取得 data2：
+ * https://data.taipei/#/dataset/detail?id=ef1813fb-6685-4841-a5c0-6e2acb2c0650
+ * api GET https://tpeoc.blob.core.windows.net/blobfs/GetFTDDamData.json
  *
  */
 

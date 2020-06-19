@@ -6,7 +6,7 @@
  *
  */
 
-import React from 'react';
+import React, {useContext, useReducer} from 'react';
 import './App.css';
 import { Route, Switch, Link, withRouter } from 'react-router-dom'
 import Home from './Home'
@@ -22,7 +22,7 @@ import PureComponentPage from './PureComponentPage'
 import UseCallbackPage from './UseCallbackPage'
 import UseMemoPage from './UseMemoPage'
 import CustomHookPage from './CustomHookPage'
-import { connect } from './store'
+//import {connect} from "./Provider";
 
 function App(props) {
 
@@ -71,6 +71,10 @@ function App(props) {
   );
 }
 
-// 沒用 useContext: export default withRouter(App);
-// homework2: 如果要用 reducer，要加 connect
-export default withRouter(connect(App));
+// react-router-dom withRouter: 讓不管在哪的 component 能接收到 props: match, location, history
+// 官網：https://reacttraining.com/react-router/web/api/withRouter
+
+export default withRouter(App);
+// TODO: export default withRouter(connect(App));
+
+
