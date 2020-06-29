@@ -6,7 +6,7 @@
  *
  */
 
-import React, {useContext, useReducer} from 'react';
+import React from 'react';
 import './App.css';
 import { Route, Switch, Link, withRouter } from 'react-router-dom'
 import Home from './Home'
@@ -22,7 +22,11 @@ import PureComponentPage from './PureComponentPage'
 import UseCallbackPage from './UseCallbackPage'
 import UseMemoPage from './UseMemoPage'
 import CustomHookPage from './CustomHookPage'
-//import {connect} from "./Provider";
+
+/**
+ * homework2: 將 count 用仿 Redux 的方式（useContext, useReducer）傳進去 App
+ */
+import {connect} from "./Provider";
 
 function App(props) {
 
@@ -74,7 +78,7 @@ function App(props) {
 // react-router-dom withRouter: 讓不管在哪的 component 能接收到 props: match, location, history
 // 官網：https://reacttraining.com/react-router/web/api/withRouter
 
-export default withRouter(App);
-// TODO: export default withRouter(connect(App));
+//export default withRouter(App);
+export default withRouter(connect(App));
 
 

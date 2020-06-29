@@ -80,12 +80,7 @@ export function Actions(state, dispatch) {
 //     const store = useContext(common)
 //     return (
 //       <Provider>
-//         <App
-//           {...props}
-//
-//           // step1
-//           {...state}
-//         />
+//         <ConnectedApp {...props}/>
 //       </Provider>
 //     )
 //   }
